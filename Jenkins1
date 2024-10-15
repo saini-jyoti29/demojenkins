@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("A"){
             steps{
-     `           sh 'echo "${name}"'
+              sh 'echo "${name}"'
                 echo "========executing A========"
             }
             post{
