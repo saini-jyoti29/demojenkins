@@ -1,6 +1,7 @@
 pipeline{
-    agent{
-        label "node"
+     agent any
+    environment{
+        name='jyoti'
     }
     stages{
         stage("A"){
