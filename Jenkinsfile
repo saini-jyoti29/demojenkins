@@ -9,7 +9,7 @@ pipeline {
             steps {
                 sh 'date'
                 sh 'pwd'
-                echo ' test Hello World'
+                echo  'test Hello World'
             }
         }
         stage('build') {
@@ -23,12 +23,12 @@ pipeline {
                 echo 'build Hello World'
             }
         }
-        stage('deploy test evironment ') {
+        stage('deploy test evironment') {
             
             steps {
-                echo 'deploy test Hello World'
-                sh 'echo "${BUILD_ID}"'
-              sh 'echo "${name}"'
+                   echo 'deploy test Hello World'
+                   sh 'echo "${BUILD_ID}"'
+                   sh 'echo "${name}"'
             }
         }
         stage('deploy prod') {
